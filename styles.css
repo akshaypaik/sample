@@ -1,0 +1,99 @@
+body{
+	margin: auto 0;
+	font-family: 'Pacifico', cursive;
+	color: rgba(0,0,0,.5);
+	background: linear-gradient (to right, red, yellow);
+}
+.zone {
+	transition: all 0.3s linear;
+	cursor: pointer;
+	
+}
+.zone:hover{
+	box-shadow: rgba(0,0,0,8);
+}
+.green{
+	background-color: #79C5FF;
+
+}
+.main-nav{
+	display: flex;
+	list-style: none;
+	font-size: 1.5em;
+	margin: 0; 
+}
+.push{
+	margin-left: auto;
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	background: black;
+}
+.grid-wrapper{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows:  1fr;
+}
+.box > img{
+	width: 100%;
+}
+.box{
+	padding: 50px;
+	margin: 20px;
+	transition: all 1s;
+}
+.box:hover{
+	transform: rotate(-7deg);
+}
+.cover{
+	width: 40vh;
+	position: absolute;
+}
+.covertext{
+	text-align: center;
+	position: relative;
+	font-size: 15vh;
+	color: white;
+}
+.clothprice{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	color: grey;
+	font-family: 'Open Sans', sans-serif;
+}
+.clothprice:hover{
+	color: red;
+}
+footer{
+	text-align: center;
+	background: #462103;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+@media only screen and (max-width: 600px){
+	.main-nav{
+		padding: 0;
+		font-size: 1em; 
+	}
+}
+li{
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+	color: #FFF;
+}
